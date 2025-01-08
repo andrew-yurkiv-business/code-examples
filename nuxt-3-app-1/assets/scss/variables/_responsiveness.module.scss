@@ -1,0 +1,8 @@
+@use '~/assets/scss/variables/_responsiveness' as *;
+
+:export {
+  mobile: $mobile;
+  tablet: $tablet;
+  laptop: $laptop;
+  layout-sidebar-collapse-max-width: $layout-sidebar-collapse-max-width;
+}

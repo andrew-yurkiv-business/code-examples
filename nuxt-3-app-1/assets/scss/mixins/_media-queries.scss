@@ -1,0 +1,31 @@
+@use '~/assets/scss/variables/_responsiveness' as *;
+
+@mixin mobile() {
+  @media (width < $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (width >= $tablet < $laptop) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media (width >= $laptop) {
+    @content;
+  }
+}
+
+@mixin tabletAndHigher() {
+  @media (width >= $tablet) {
+    @content;
+  }
+}
+
+@mixin mobileAndTablet() {
+  @media (width < $laptop) {
+    @content;
+  }
+}
